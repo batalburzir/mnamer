@@ -147,6 +147,7 @@ class MetadataEpisode(Metadata):
     title: str | None = None
     id_tvdb: str | None = None
     id_tvmaze: str | None = None
+    series_year: str | None = None
 
     def __post_init__(self):
         if isinstance(self.season, str):

@@ -482,4 +482,5 @@ class TvMaze(Provider):
             series=series_entry["name"],
             synopsis=episode_entry["summary"] or None,
             title=episode_entry["name"] or None,
+            series_year=series_entry["premiered"][:4]
         )
